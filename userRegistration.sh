@@ -32,13 +32,19 @@ fi
 #Mobile Number
 read -p "Enter your Mobile Number : " mobNumber
 regex='^[91]{2}[ ]?[0-9]{10}$'
-
 if [[ $mobNumber =~ $regex ]]
 then
 	echo "Valid Mobile Number"
 else
-
 	echo "InValid Mobile Number"
+fi
 
-
+#Password
+read -p "Enter password : " password
+regex="^[a-z]{8,}$"
+if [[ $password =~ $regex ]]
+then
+	echo "Valid Password"
+else
+	echo "Invalid Password"
 fi
