@@ -41,7 +41,7 @@ fi
 
 #Password
 read -p "Enter password : " password
-regex="^[a-z]{8,}$"
+regex="^[a-zA-Z]{8,}$"
 if [[ $password =~ $regex ]]
 then
 	echo "Valid Password"
