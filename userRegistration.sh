@@ -29,3 +29,16 @@ then
 else
 	echo "Invalid Email"
 fi
+#Mobile Number
+read -p "Enter your Mobile Number : " mobNumber
+regex='^[91]{2}[ ]?[0-9]{10}$'
+
+if [[ $mobNumber =~ $regex ]]
+then
+	echo "Valid Mobile Number"
+else
+
+	echo "InValid Mobile Number"
+
+
+fi
