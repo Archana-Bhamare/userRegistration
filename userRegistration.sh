@@ -43,6 +43,7 @@ fi
 read -p "Enter password : " password
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 regex="^[a-zA-Z0-9+*%$#@&]{8,}$"
 =======
 regex="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"
@@ -50,6 +51,9 @@ regex="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"
 =======
 regex="^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$"
 >>>>>>> uc7-pawdNumericNumber
+=======
+regex="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@$#%*+]).{8,}$"
+>>>>>>> uc8-pawdSpecialCharacter
 if [[ $password =~ $regex ]]
 then
 	echo "Valid Password"
