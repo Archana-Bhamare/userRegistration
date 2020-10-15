@@ -41,7 +41,11 @@ fi
 
 #Password
 read -p "Enter password : " password
+<<<<<<< HEAD
 regex="^[a-zA-Z0-9+*%$#@&]{8,}$"
+=======
+regex="^(?=.*[A-Z])[a-zA-Z0-9]{8,}$"
+>>>>>>> uc6-pawdUppercase
 if [[ $password =~ $regex ]]
 then
 	echo "Valid Password"
